@@ -5,7 +5,7 @@ const Revenue = () => {
   const [totalRevenue, setTotalRevenue] = useState(null);
   useEffect(() => {
     axios
-      .get("http://localhost:8000/revenue")
+      .get("https://sales-app-backend.onrender.com/revenue")
       .then((response) => setTotalRevenue(response.data.totalRevenue))
       .catch((error) => console.log(error));
   }, []);

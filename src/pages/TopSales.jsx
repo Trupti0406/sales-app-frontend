@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const TopSales = () => {
   const [sales, setSales] = useState([]);
   const getTopFive = () => {
-    fetch("http://localhost:8000/top-five", {
+    fetch("https://sales-app-backend.onrender.com/top-five", {
       method: "GET",
       headers: { Authorization: "Bearer " + localStorage.getItem("authToken") },
     })

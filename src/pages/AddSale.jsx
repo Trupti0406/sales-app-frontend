@@ -14,7 +14,7 @@ const AddSale = () => {
 
     const { productName, quantity, amount } = salesData;
     try {
-      await fetch("http://localhost:8000/addsale", {
+      await fetch("https://sales-app-backend.onrender.com/addsale", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
